@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just a Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1f1f2e, #0f0f14);
+      color: #eaeaf0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 900px;
+      padding: 60px 40px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #b9b9c9;
+      max-width: 650px;
+      margin: 0 auto 40px;
+    }
+    .blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .block {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 30px 25px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .block:hover {
+      transform: translateY(-6px);
+      background: rgba(255,255,255,0.08);
+    }
+    .block h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .block span {
+      font-size: 0.95rem;
+      color: #a0a0b5;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #7f7f95;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Just a space.</h1>
+    <p>
+      This isn’t a portfolio. Not a brand. Not a resume.  
+      Just a quiet corner on the internet — built slowly, honestly.
+    </p>
+
+    <div class="blocks">
+      <div class="block">
+        <h3>Thinking</h3>
+        <span>Learning without rushing the outcome.</span>
+      </div>
+      <div class="block">
+        <h3>Building</h3>
+        <span>Small things. At my own pace.</span>
+      </div>
+      <div class="block">
+        <h3>Resetting</h3>
+        <span>Pausing when the noise gets loud.</span>
+      </div>
+      <div class="block">
+        <h3>Moving</h3>
+        <span>Not fast. Just forward.</span>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 · made quietly
+    </footer>
+  </div>
+</body>
+</html>
